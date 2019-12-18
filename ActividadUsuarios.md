@@ -73,6 +73,10 @@ Vemos que nos salta el mismo de Login Incorrecto ,en este no nos deja conectarno
 
 **9.** Bien ahora vamos a probar con el primer usuario que hemos creado, a ese no le hemos betado la conexión ni nada, veamos que pasa si nos conectamos con él.
 
+![Captura21](./imagenes/Captura21.PNG)
 
+Como vemos en la parte de la izquierda vemos los archivos del usuario desde el que hemos accedido al servidor y en el apartado de la derecha vemos los archivos con los que cuenta nuestro usuarioftp, para subir el archivo simplemente tendríamos que arrastrar el archivo deseado a nuestro usuario FTP.
+
+Si funciona correctamente habremos comprobado que los usuarios funcionan tal y como deseamos.
 
 [Volver a la página principal](README.md)
