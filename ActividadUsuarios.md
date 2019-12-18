@@ -37,6 +37,6 @@ Como podemos observar nos pide un nombre usuario, simplemente tendríamos que es
 
 Una vez nos conectemos correctamente nos aparecerá este mensaje de confirmación:
 
-![Captura17](./imagenes/Captura17.PNG)
+![Captura18](./imagenes/Captura18.PNG)
 
 [Volver a la página principal](README.md)
