@@ -51,6 +51,26 @@ Si sabemos un poco de inglés ya sabemos donde tendremos que acceder, pero por s
 
 ![Captura20](./imagenes/Captura20.PNG)
 
+7.Bien, una vez todo hecho vamos a probar a conectarnos con ese usuario.
+
+![Captura10](./imagenes/Captura10.PNG)
+
+Nos dará un error de login incorrecto, pero no es que hayamos puesto mal la contraseña, es que nosotros no le dejamos, aunque si nos fijamos parece que nos haya conectado no, ¿verdad?, bien vamos a probar a coger un archivo (si queréis crearlo para hacer la prueba, pero no es necesario, eso si, si vais a hacer la prueba aseguraos de darle los permisos adecuados al archivo).
+
+![Captura11](./imagenes/Captura11.PNG)
+
+8.Ya vemos el problema ¿verdad? bien ahora vamos a hacer esto mismo pero con FileZilla a ver que pasa, primero crearemos un archivos en el escritorio del usuario.
+
+![Captura12](./imagenes/Captura12.PNG)
+
+Una vez creado abriremos FileZilla.
+
+![Captura13](./imagenes/Captura13.PNG)
+
+Vemos que nos salta el mismo de Login Incorrecto ,en este no nos deja conectarnos al servidor.
+
+9.Bien ahora vamos a probar con el primer usuario que hemos creado, a ese no le hemos betado la conexión ni nada, veamos que pasa si nos conectamos con él.
+
 
 
 [Volver a la página principal](README.md)
