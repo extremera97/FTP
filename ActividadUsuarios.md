@@ -43,7 +43,8 @@ Una vez nos conectemos correctamente nos aparecerá este mensaje de confirmació
 
 **6.** Ahora viene una parte un poco más díficil, que es la denegación a un usuario específico, por defecto FTP "banea" a un número de usuarios, pero, (¿y si nosotros quisiéramos "banear" a uno en específico?), lo primero que debemos hacer es acceder al apartado de wembin llamado **Un-used Modules** y buscar **ProFTPD Server** nos debería aparecer así:
 
-![Captura19](./imagenes/Captura19.PNG)
+![Captura22](./imagenes/Captura22.png) 
+![Captura23](./imagenes/Captura23.png)
 
 Lo tendremos que instalar y una vez lo instalemos nos aparecerá esto:
 
