@@ -5,6 +5,6 @@
 Una vez tengamos todo listo podemos empezar:
 
 1.Lo primero de todo es crear el usuario pero, ¿cómo haremos eso? muy sencillo accedemos a este apartado dentro de webmin.
-![imagen1](.
+![imagen1](./captura)
 
 [Volver a la página principal](README.md)
