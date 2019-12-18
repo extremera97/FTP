@@ -8,11 +8,11 @@ Una vez tengamos todo listo podemos empezar:
 
 ![Captura](./imagenes/Captura.PNG)
 
-Una vez estemos ahí accederemos donde pone **users and groups**, una vez lo hagamos se nos abrirá este asistente:
+2.Una vez estemos ahí accederemos donde pone **users and groups**, una vez lo hagamos se nos abrirá este asistente:
 
 ![Captura2](./imagenes/Captura2.PNG)
 
-Una vez estemos ahí tendremos que darle a **create new user** cuando le demos nos abrirá un asistente nuevo:
+3.Una vez estemos ahí tendremos que darle a **create new user** cuando le demos nos abrirá un asistente nuevo:
 
 ![Captura3](./imagenes/Captura3.PNG)
 
@@ -21,13 +21,13 @@ Aquí es donde le daremos un nombre de usuario, para tenerlo mejor organizado lo
 
 ![Captura4](./imagenes/Captura4.PNG)
 
-Y al igual que con los usuario tendremos que clickar en **create new group** y se abrirá un asistente:
+4.Y al igual que con los usuario tendremos que clickar en **create new group** y se abrirá un asistente:
 
 ![Captura5](./imagenes/Captura5.PNG)
 
 Aquí le pondremos el nombre del grupo, y en la parte de abajo donde pone **Members** buscaríamos el usuarioftp que hemos creado y lo uniríamos al grupo. 
 
-Ahora vamos a comprobar que efectivamente nuestro usuario se puede conectar al servidor:(*Para conectarnos al servidor tenemos que poner ftp dirección ip del servidor*)
+5.Ahora vamos a comprobar que efectivamente nuestro usuario se puede conectar al servidor:(*Para conectarnos al servidor tenemos que poner ftp dirección ip del servidor*)
 
 ![Captura6](./imagenes/Captura6.PNG)
 
@@ -38,5 +38,7 @@ Como podemos observar nos pide un nombre usuario, simplemente tendríamos que es
 Una vez nos conectemos correctamente nos aparecerá este mensaje de confirmación:
 
 ![Captura18](./imagenes/Captura18.PNG)
+
+6.Ahora viene una parte un poco más díficil, que es la denegación a un usuario específico, por defecto FTP "banea" a un número de usuarios, pero, (y si nosotros quisiéramos "banear" a uno en específico?) 
 
 [Volver a la página principal](README.md)
