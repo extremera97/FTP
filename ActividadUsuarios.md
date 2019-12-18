@@ -39,6 +39,18 @@ Una vez nos conectemos correctamente nos aparecerá este mensaje de confirmació
 
 ![Captura18](./imagenes/Captura18.PNG)
 
-6.Ahora viene una parte un poco más díficil, que es la denegación a un usuario específico, por defecto FTP "banea" a un número de usuarios, pero, (y si nosotros quisiéramos "banear" a uno en específico?) 
+6.Ahora viene una parte un poco más díficil, que es la denegación a un usuario específico, por defecto FTP "banea" a un número de usuarios, pero, (¿y si nosotros quisiéramos "banear" a uno en específico?), lo primero que debemos hacer es acceder al apartado de wembin llamado **Un-used Modules** y buscar **ProFTPD Server** nos debería aparecer así:
+
+![Captura19](./imagenes/Captura19.PNG)
+
+Lo tendremos que instalar y una vez lo instalemos nos aparecerá esto:
+
+![Captura8](./imagenes/Captura8.PNG)
+
+Si sabemos un poco de inglés ya sabemos donde tendremos que acceder, pero por si acaso tendremos que acceder a **Denied FTP Users** y una vez le demos nos saldrá una lista de usuarios, esos usuarios son los que tienen prohibida la entrada a nuestro servidor por así decirlo, para hacer la prueba crear un usuario llamado usuariodenegado y agregarlo a esa lista.
+
+![Captura9](./imagenes/Captura9.PNG)
+
+
 
 [Volver a la página principal](README.md)
