@@ -1,18 +1,20 @@
 # Actividad1(Guiada)
 
+***(Para completar correctamente la actividad habrá de realizar un archivo PDF con las capturas necesarias para demostrar que ha realizado la actividad)***
+
 (Lo aconsejable para realizar es contar con máquinas Ubuntu 18.04 que es donde se han realizado las pruebas, y que tengan instalado tanto webmin como filezilla, si no se cuenta con webmin este link te llevará a un tutorial sobre como instalarlo,importante poder utilizar permisos de root en la máquina). [https://clouding.io/kb/como-instalar-webmin-en-ubuntu-18-04/]
 
 Una vez tengamos todo listo podemos empezar:
 
-1.Lo primero de todo es crear el usuario pero, ¿cómo haremos eso? muy sencillo accedemos a este apartado dentro de webmin.
+**1.** Lo primero de todo es crear el usuario pero, ¿cómo haremos eso? muy sencillo accedemos a este apartado dentro de webmin.
 
 ![Captura](./imagenes/Captura.PNG)
 
-2.Una vez estemos ahí accederemos donde pone **users and groups**, una vez lo hagamos se nos abrirá este asistente:
+**2.** Una vez estemos ahí accederemos donde pone **users and groups**, una vez lo hagamos se nos abrirá este asistente:
 
 ![Captura2](./imagenes/Captura2.PNG)
 
-3.Una vez estemos ahí tendremos que darle a **create new user** cuando le demos nos abrirá un asistente nuevo:
+**3.** Una vez estemos ahí tendremos que darle a **create new user** cuando le demos nos abrirá un asistente nuevo:
 
 ![Captura3](./imagenes/Captura3.PNG)
 
@@ -21,13 +23,13 @@ Aquí es donde le daremos un nombre de usuario, para tenerlo mejor organizado lo
 
 ![Captura4](./imagenes/Captura4.PNG)
 
-4.Y al igual que con los usuario tendremos que clickar en **create new group** y se abrirá un asistente:
+**4.** Y al igual que con los usuario tendremos que clickar en **create new group** y se abrirá un asistente:
 
 ![Captura5](./imagenes/Captura5.PNG)
 
 Aquí le pondremos el nombre del grupo, y en la parte de abajo donde pone **Members** buscaríamos el usuarioftp que hemos creado y lo uniríamos al grupo. 
 
-5.Ahora vamos a comprobar que efectivamente nuestro usuario se puede conectar al servidor:(*Para conectarnos al servidor tenemos que poner ftp dirección ip del servidor*)
+**5.** Ahora vamos a comprobar que efectivamente nuestro usuario se puede conectar al servidor:(*Para conectarnos al servidor tenemos que poner ftp dirección ip del servidor*)
 
 ![Captura6](./imagenes/Captura6.PNG)
 
@@ -39,7 +41,7 @@ Una vez nos conectemos correctamente nos aparecerá este mensaje de confirmació
 
 ![Captura18](./imagenes/Captura18.PNG)
 
-6.Ahora viene una parte un poco más díficil, que es la denegación a un usuario específico, por defecto FTP "banea" a un número de usuarios, pero, (¿y si nosotros quisiéramos "banear" a uno en específico?), lo primero que debemos hacer es acceder al apartado de wembin llamado **Un-used Modules** y buscar **ProFTPD Server** nos debería aparecer así:
+**6.** Ahora viene una parte un poco más díficil, que es la denegación a un usuario específico, por defecto FTP "banea" a un número de usuarios, pero, (¿y si nosotros quisiéramos "banear" a uno en específico?), lo primero que debemos hacer es acceder al apartado de wembin llamado **Un-used Modules** y buscar **ProFTPD Server** nos debería aparecer así:
 
 ![Captura19](./imagenes/Captura19.PNG)
 
@@ -51,7 +53,7 @@ Si sabemos un poco de inglés ya sabemos donde tendremos que acceder, pero por s
 
 ![Captura20](./imagenes/Captura20.PNG)
 
-7.Bien, una vez todo hecho vamos a probar a conectarnos con ese usuario.
+**7.** Bien, una vez todo hecho vamos a probar a conectarnos con ese usuario.
 
 ![Captura10](./imagenes/Captura10.PNG)
 
@@ -59,7 +61,7 @@ Nos dará un error de login incorrecto, pero no es que hayamos puesto mal la con
 
 ![Captura11](./imagenes/Captura11.PNG)
 
-8.Ya vemos el problema ¿verdad? bien ahora vamos a hacer esto mismo pero con FileZilla a ver que pasa, primero crearemos un archivos en el escritorio del usuario.
+**8.** Ya vemos el problema ¿verdad? bien ahora vamos a hacer esto mismo pero con FileZilla a ver que pasa, primero crearemos un archivos en el escritorio del usuario.
 
 ![Captura12](./imagenes/Captura12.PNG)
 
@@ -69,7 +71,7 @@ Una vez creado abriremos FileZilla.
 
 Vemos que nos salta el mismo de Login Incorrecto ,en este no nos deja conectarnos al servidor.
 
-9.Bien ahora vamos a probar con el primer usuario que hemos creado, a ese no le hemos betado la conexión ni nada, veamos que pasa si nos conectamos con él.
+**9.** Bien ahora vamos a probar con el primer usuario que hemos creado, a ese no le hemos betado la conexión ni nada, veamos que pasa si nos conectamos con él.
 
 
 
