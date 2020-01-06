@@ -85,5 +85,17 @@ Y como último paso vamos a probar a enjaular los usuarios, esta función sirve 
 
 ![Captura24](./imagenes/Captura24.PNG)
 
+Tendremos que acceder a "Edit Config Files" y una vez accedamos veremos un archivo de texto enorme, pero no hay porque asustarse, a nosotros solo nos interesa una línea de texto y es la que pone: DefaultRoot que es la que tendremos que editar.
+
+![Captura25](./imagenes/Captura25.PNG)
+
+El primer paso sería borrar la almohadilla para que así haga la función que nosotros le digamos, a continuación dejando un espacio indicaremos la ruta de donde queremos enjaular el usuario para que solo pueda trabajar en ese directorio que nosotros le asignemos y después mediante otro espacio indicaremos el usuario o grupo de usuarios que queremos que este enjaulado.
+
+Y por último mediante la herramiento de FileZilla vamos a comprobar que efectivamente nuestro usuario está "encerrado" en ese directorio.
+
+![Captura26](./imagenes/Captura26.PNG)
+
+*Una vez adjuntes la captura de todas las actividades habrás finalizado con éxito esta actividad*
+
 
 [Volver a la página principal](README.md)
