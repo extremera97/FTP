@@ -4,7 +4,7 @@
 En esta veremos un poco como configurar nuestro servidor a partir de una serie de ejercicios guiados y otros no tan guiados.
 ## Indice
 # 1. Configurar usuario y grupos FTP
-*Accede al primer ejercicio mediante este enlace:*[]
+*Accede al primer ejercicio mediante este enlace:*[https://github.com/amcamiguel/FTP2/blob/master/ActividadUsuarios.md]
 
 ## Por Miguel Ángel Arroyo
 Contenido disponible en: [acamamiguel.github.io/FTP2/](https://amcamiguel.github.io./FTP2)
