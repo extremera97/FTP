@@ -1,25 +1,25 @@
 # Actividad1(Guiada)
 
-***(Para completar correctamente la actividad habrá de realizar un archivo PDF con las capturas necesarias para demostrar que ha realizado la actividad)***
+***(Para completar correctamente la actividad habrá que realizar un archivo PDF con las capturas necesarias para demostrar que ha realizado la actividad)***
 
-(Lo aconsejable para realizar es contar con máquinas Ubuntu 18.04 que es donde se han realizado las pruebas, y que tengan instalado tanto webmin como filezilla, si no se cuenta con webmin este link te llevará a un tutorial sobre como instalarlo,importante poder utilizar permisos de root en la máquina). [https://clouding.io/kb/como-instalar-webmin-en-ubuntu-18-04/]
+(Lo aconsejable para realizar esta actividad es contar con máquinas Ubuntu 18.04 que es donde se han realizado las pruebas, y que tengan instalado tanto webmin como FileZilla, si no se cuenta con webmin este link te llevará a un tutorial sobre como instalarlo,importante poder utilizar permisos de root en la máquina). [https://clouding.io/kb/como-instalar-webmin-en-ubuntu-18-04/]
 
 Una vez tengamos todo listo podemos empezar:
 
-**1.** Lo primero de todo es crear el usuario pero, ¿cómo haremos eso? muy sencillo accedemos a este apartado dentro de webmin.
+**1.** Lo primero de todo es crear el usuario pero, ¿cómo haremos eso? muy sencillo, accedemos a este apartado dentro de webmin.
 
 ![Captura](./imagenes/Captura.PNG)
 
-**2.** Una vez estemos ahí accederemos donde pone **users and groups**, una vez lo hagamos se nos abrirá este asistente:
+**2.** Una vez estemos ahí, accederemos donde pone **users and groups**, una vez lo hagamos se nos abrirá este asistente:
 
 ![Captura2](./imagenes/Captura2.PNG)
 
-**3.** Una vez estemos ahí tendremos que darle a **create new user** cuando le demos nos abrirá un asistente nuevo:
+**3.** Una vez estemos ahí tendremos que darle a **create new user**, cuando le demos nos abrirá un asistente nuevo:
 
 ![Captura3](./imagenes/Captura3.PNG)
 
-Aquí es donde le daremos un nombre de usuario, para tenerlo mejor organizado lo llamaremos usuarioftp y la contraseña  le pondremos la que queramos nosotros. Después de este paso y de darle a **save changes** ya tendríamos el usuario creado, ahora pasaremos a crear el grupo ftp para tenerlo todo mejor organizado:
-(**¡IMPORTANTE! PONER CONTRAEÑA DE LA CUAL NOS ACORDEMOS**)
+Aquí es donde le daremos un nombre de usuario, para tenerlo mejor organizado lo llamaremos usuarioftp y la contraseña le pondremos la que queramos nosotros. Después de este paso y de darle a **save changes** ya tendríamos el usuario creado, ahora pasaremos a crear el grupo ftp para tenerlo todo mejor organizado:
+(**¡IMPORTANTE! PONER CONTRASEÑA DE LA CUAL NOS ACORDEMOS**)
 
 ![Captura4](./imagenes/Captura4.PNG)
 
@@ -27,9 +27,9 @@ Aquí es donde le daremos un nombre de usuario, para tenerlo mejor organizado lo
 
 ![Captura5](./imagenes/Captura5.PNG)
 
-Aquí le pondremos el nombre del grupo, y en la parte de abajo donde pone **Members** buscaríamos el usuarioftp que hemos creado y lo uniríamos al grupo. 
+Aquí le pondremos el nombre del grupo, y en la parte de abajo donde pone **Members** buscamos el usuarioftp que hemos creado y lo unimos al grupo. 
 
-**5.** Ahora vamos a comprobar que efectivamente nuestro usuario se puede conectar al servidor:(*Para conectarnos al servidor tenemos que poner ftp dirección ip del servidor*)
+**5.** Ahora vamos a comprobar que efectivamente nuestro usuario se puede conectar al servidor:(*Para conectarnos al servidor tenemos que poner: ftp + dirección ip del servidor*)
 
 ![Captura6](./imagenes/Captura6.PNG)
 
@@ -41,7 +41,7 @@ Una vez nos conectemos correctamente nos aparecerá este mensaje de confirmació
 
 ![Captura18](./imagenes/Captura18.PNG)
 
-**6.** Ahora viene una parte un poco más díficil, que es la denegación a un usuario específico, por defecto FTP "banea" a un número de usuarios, pero, (¿y si nosotros quisiéramos "banear" a uno en específico?), lo primero que debemos hacer es acceder al apartado de wembin llamado **Un-used Modules** y buscar **ProFTPD Server** nos debería aparecer así:
+**6.** Ahora viene una parte un poco más díficil, que es la denegación a un usuario específico, por defecto FTP "banea" a un número de usuarios, pero,¿y si nosotros quisiéramos "banear" a uno en específico?, lo primero que debemos hacer es acceder al apartado de wembin llamado **Un-used Modules** y buscar **ProFTPD Server** nos debería aparecer así:
 
 ![Captura22](./imagenes/Captura22.png) 
 ![Captura23](./imagenes/Captura23.png)
@@ -58,11 +58,11 @@ Si sabemos un poco de inglés ya sabemos donde tendremos que acceder, pero por s
 
 ![Captura10](./imagenes/Captura10.PNG)
 
-Nos dará un error de login incorrecto, pero no es que hayamos puesto mal la contraseña, es que nosotros no le dejamos, aunque si nos fijamos parece que nos haya conectado no, ¿verdad?, bien vamos a probar a coger un archivo (si queréis crearlo para hacer la prueba, pero no es necesario, eso si, si vais a hacer la prueba aseguraos de darle los permisos adecuados al archivo).
+Nos dará un error de login incorrecto, pero no es que hayamos puesto mal la contraseña, es que nosotros no le dejamos, aunque si nos fijamos parece que nos haya conectado, ¿verdad?, bien, vamos a probar a poner un archivo (si queréis crearlo para hacer la prueba, pero no es necesario, eso si, si vais a hacer la prueba aseguraos de darle los permisos adecuados al archivo).
 
 ![Captura11](./imagenes/Captura11.PNG)
 
-**8.** Ya vemos el problema ¿verdad? bien ahora vamos a hacer esto mismo pero con FileZilla a ver que pasa, primero crearemos un archivos en el escritorio del usuario.
+**8.** Ya vemos el problema ¿verdad? bien ahora vamos a hacer esto mismo pero con FileZilla a ver que pasa, primero crearemos un archivo en el escritorio del usuario.
 
 ![Captura12](./imagenes/Captura12.PNG)
 
@@ -89,7 +89,7 @@ Tendremos que acceder a "Edit Config Files" y una vez accedamos veremos un archi
 
 ![Captura25](./imagenes/Captura25.PNG)
 
-El primer paso sería borrar la almohadilla para que así haga la función que nosotros le digamos, a continuación dejando un espacio indicaremos la ruta de donde queremos enjaular el usuario para que solo pueda trabajar en ese directorio que nosotros le asignemos y después mediante otro espacio indicaremos el usuario o grupo de usuarios que queremos que este enjaulado.
+El primer paso sería borrar la almohadilla para que así haga la función que nosotros le digamos, a continuación dejando un espacio indicaremos la ruta de donde queremos enjaular el usuario para que solo pueda trabajar en ese directorio que nosotros le asignemos y después mediante otro espacio indicaremos el usuario o grupo de usuarios que queremos que esté enjaulado.
 
 Y por último mediante la herramienta de FileZilla vamos a comprobar que efectivamente nuestro usuario está "encerrado" en ese directorio.
 
