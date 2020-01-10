@@ -91,7 +91,7 @@ Tendremos que acceder a "Edit Config Files" y una vez accedamos veremos un archi
 
 El primer paso sería borrar la almohadilla para que así haga la función que nosotros le digamos, a continuación dejando un espacio indicaremos la ruta de donde queremos enjaular el usuario para que solo pueda trabajar en ese directorio que nosotros le asignemos y después mediante otro espacio indicaremos el usuario o grupo de usuarios que queremos que este enjaulado.
 
-Y por último mediante la herramiento de FileZilla vamos a comprobar que efectivamente nuestro usuario está "encerrado" en ese directorio.
+Y por último mediante la herramienta de FileZilla vamos a comprobar que efectivamente nuestro usuario está "encerrado" en ese directorio.
 
 ![Captura26](./imagenes/Captura26.PNG)
 
