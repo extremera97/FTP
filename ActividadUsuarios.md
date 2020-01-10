@@ -98,4 +98,4 @@ Y por último mediante la herramienta de FileZilla vamos a comprobar que efectiv
 *Una vez adjuntes la captura de todas las actividades habrás finalizado con éxito esta actividad*
 
 
-[Volver a la página principal](README.md)
+[Volver a la página principal](INDICE.md)
