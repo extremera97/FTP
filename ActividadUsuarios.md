@@ -81,7 +81,7 @@ Como vemos en la parte de la izquierda vemos los archivos del usuario desde el q
 Si funciona correctamente habremos comprobado que los usuarios funcionan tal y como deseamos.
 Y como último paso vamos a probar a enjaular los usuarios, esta función sirve principalmente para que los usuarios no naveguen con libertad por todos nuestros archivos y se hace con dos sencillos pasos:
 
-**10.** Como hemos dicho vamos a enjaular a los usuarios, para ello el primer paso sería acceder al archivo de configuración de la siguiente forma:
+**20.** Como hemos dicho vamos a enjaular a los usuarios, para ello el primer paso sería acceder al archivo de configuración de la siguiente forma:
 
 ![Captura24](./imagenes/Captura24.PNG)
 
