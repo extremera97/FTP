@@ -10,8 +10,8 @@
 
 **3.** Configura usuarios denegados desde webmin y realiza las pruebas.
 
-**4.** Prueba la conexión tanto con FileZilla como con comandos.
+**4.** Prueba la conexión tanto con FileZilla como de manera de texto.
 
 **5.** Prueba la subida de archivos con FileZilla.
 
-[Volver a la página principal](README.md)
+[Volver a la página principal](INDICE.md)
