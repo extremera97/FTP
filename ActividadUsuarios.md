@@ -1,10 +1,12 @@
 # Actividad1(Guiada)
 
-***(Para completar correctamente la actividad habrá que realizar un archivo PDF con las capturas necesarias para demostrar que ha realizado la actividad)***
+Vamos a realizar una actividad en la que aprenderemos a configurar los permisos y los modos de acceso de los usuarios al servidor.
 
-(Lo aconsejable para realizar esta actividad es contar con máquinas Ubuntu 18.04 que es donde se han realizado las pruebas, y que tengan instalado tanto webmin como FileZilla, si no se cuenta con webmin este link te llevará a un tutorial sobre como instalarlo,importante poder utilizar permisos de root en la máquina). [https://clouding.io/kb/como-instalar-webmin-en-ubuntu-18-04/]
+(Lo aconsejable para realizar esta actividad es contar con máquinas Ubuntu 18.04 que es donde se han realizado las pruebas, y que tengan instalado tanto webmin como FileZilla, si no se cuenta con webmin este link te llevará a un tutorial sobre como instalarlo,importante poder utilizar permisos de root en la máquina). [Guía instalación Webmin](https://clouding.io/kb/como-instalar-webmin-en-ubuntu-18-04/)
 
-Una vez tengamos todo listo podemos empezar:
+Por defecto, los usuarios que están en nuestra máquina donde tenemos instalado el servidor, se pueden conectar al servidor, usando sus propias credenciales(nombre de usuario, contraseña...) y cuando se conectan, de manera predeterminada el usuario está navegando por su propio /home y si nosotros no configuramos los permisos es capaz de navegar por cualquier directorio.
+
+Comenzaremos con una pequeña guía sobre como crear usuarios en nuestra máquina desde Webmin:
 
 **1.** Lo primero de todo es crear el usuario pero, ¿cómo haremos eso? muy sencillo, accedemos a este apartado dentro de webmin.
 
