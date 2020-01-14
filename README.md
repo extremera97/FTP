@@ -1,7 +1,10 @@
 # FTP
 
-***FTP(File Transfer Protocoll), si lo traducimos practicamente nos está diciendo la ultilidad de un servidor FTP, Protocolo de Transferencia de Ficheros, su función es bastante clara, que es la transferencia de ficheros entre el servidor y el cliente, y además de manera bastante sencilla ya que existen varias aplicaciones que facilitan este trabajo.***
-En esta veremos un poco como configurar nuestro servidor a partir de una serie de ejercicios guiados y otros no tan guiados.
+***FTP(File Transfer Protocoll)
+¿Sabéis cuál fue el primer almacenamiento en la nube?
+¿Si tenía algunos problemas de seguridad?
+¿Quuién fue el padre de Dropbox, Google Drive, etc...***
+En estas actividades intentaremos que aprendáis un poco sobre lo que era FTP.
 ## Indice
 # 1. Configurar usuario y grupos FTP
 *Accede al primer ejercicio mediante este enlace:* [Actividad Usuarios con Guía](https://github.com/amcamiguel/FTP2/blob/master/ActividadUsuarios.md)
