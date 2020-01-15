@@ -3,7 +3,7 @@
 ***FTP(File Transfer Protocoll)
 ¿Sabéis cuál fue el primer almacenamiento en la nube?
 ¿Si tenía algunos problemas de seguridad?
-¿Quuién fue el padre de Dropbox, Google Drive, etc...***
+¿Quién fue el padre de Dropbox, Google Drive, etc...***
 En estas actividades intentaremos que aprendáis un poco sobre lo que era FTP.
 ## Indice
 # 1. Configurar usuario y grupos FTP
