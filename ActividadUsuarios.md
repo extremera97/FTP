@@ -16,7 +16,7 @@ Comenzaremos con una pequeña guía sobre como crear usuarios en nuestra máquin
 
 ![Captura2](./imagenes/Captura2.PNG)
 
-**3.** Una vez estemos ahí tendremos que darle a **create new user**, cuando le demos nos abrirá un asistente nuevo:
+**3.** El siguiente paso sería que tendremos  que darle a **create new user**, cuando le demos nos abrirá un asistente nuevo:
 
 ![Captura3](./imagenes/Captura3.PNG)
 
