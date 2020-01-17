@@ -59,7 +59,7 @@ Como vemos nos da un error y por tanto no nos deja conectarnos. Si quisiéramos 
 
 Bien, ahora vamos a comprobar que efectivamente está enjaulado en la ruta que le hayamos especificado, si toda ha salido bien nos tendría que aparecer así:
 
-***Configuración FTP Anonimo*
+***Configuración FTP Anonimo***
 
 **9.** El último paso respecto a la configuración de usuarios, sería la configuración anónima del servidor, accedemos a nuestro servidor y veremos que hay una opción que se llama anonymous FTP, tendremos que acceder a ella y aparecerá lo siguiente: 
 
