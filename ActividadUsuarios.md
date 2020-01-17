@@ -76,4 +76,4 @@ Si queremos probar la opción de Failed login message, tendremos que volver a de
 Y por último vamos a limitar el número de veces simultáneas que puedes conectarte al servidor de forma anónimo, en **Networking Options** veremos una opción llamada **Maximum concurrent logins** en esa opción podremos limitar las veces que puede conectarse al servidor y el mensaje de error que queremos que aparezca.
 
 
-[Volver a la página principal](INDICE.md)
+[Volver a la página principal](README.md)
