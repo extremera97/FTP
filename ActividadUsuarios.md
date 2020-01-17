@@ -74,33 +74,61 @@ Nos muestra donde hemos accedido de primeras.
 
 **7.** Bien, una vez todo hecho vamos a probar a conectarnos con ese usuario.
 
-
+![Captura28](./imagenes/Captura28.PNG)
 
 Como vemos nos da un error y por tanto no nos deja conectarnos. Si quisiéramos volver a permitir que el usuario se conecte simplemente borramos su nombre de la lista de usuarios denegados y ya volvería a funcionar correctamente.
 
 ***Enjaulamiento usuarios***
 
-**8.** Como siguiente paso vamos a hablar sobre el enjalamiento de usuarios, este es un paso para darle más seguridad al servidor, ya que limitamos al usuario a que solo pueda navegar dentro de la ruta que nosotros le especifiquemos.(*Si en los pasos anteriores has puesto que se conecte directamente a la raíz / cambialo, si no dará un error y el usuario no se enjaulará*), para enjaularlo tendremos que acceder a **Edit Config Files**, lo primero que veremos es un archivo de texto, tenemos que buscar una línea de texto que nos aparecerá de la siguiente manera: #DefaultRoot tendremos que quitarle la almohadilla como se ve en la siguiente imagen:
+**8.** Como siguiente paso vamos a hablar sobre el enjalamiento de usuarios, este es un paso para darle más seguridad al servidor, ya que limitamos al usuario a que solo pueda navegar dentro de la ruta que nosotros le especifiquemos.(*Si en los pasos anteriores has puesto que se conecte directamente a la raíz / cambialo, si no dará un error y el usuario no se enjaulará*), para enjaularlo tendremos que acceder a **Edit Config Files**, lo primero que veremos es un archivo de texto, tenemos que buscar una línea de texto que nos aparecerá de la siguiente manera: #DefaultRoot tendremos que quitarle la almohadilla y especificar la ruta donde queremos enjaular al usuario que también especificaremos en esta línea de texto como se ve en la siguiente imagen:
 
-
+![Captura16](./imagenes/Captura16.PNG)
 
 Bien, ahora vamos a comprobar que efectivamente está enjaulado en la ruta que le hayamos especificado, si toda ha salido bien nos tendría que aparecer así:
+
+![Captura17](./imagenes/Captura17.PNG)
+
+Si probáramos a salir de /home veríamos que no podemos. 
 
 ***Configuración FTP Anonimo***
 
 **9.** El último paso respecto a la configuración de usuarios, sería la configuración anónima del servidor, accedemos a nuestro servidor y veremos que hay una opción que se llama anonymous FTP, tendremos que acceder a ella y aparecerá lo siguiente: 
 
+![Captura19](./imagenes/Captura19.PNG)
 
 Si no tenemos el grupo ftp creado seleccionar la opción de Default, una vez le demos a Create se nos abrirá una nueva serie de opciones para configurar el usuario anónimo:
 
-De estas opciones muy importante que marquemos no en la opción de only allow login by users with valid shell? Si no no podremos acceder al servidor.
+![Captura20](./imagenes/Captura20.PNG)
+
+De todos los apartados que salen tendremos que acceder a Authentication y aparecerá lo siguiente:
+
+![Captura21](./imagenes/Captura21.PNG)
+
+De estas opciones muy importante que marquemos no en la opción de only allow login by users with valid shell? Si no no podremos acceder al servidor, ahora vamos a probar a conectarnos al servidor como anónimo, para hacer esto cuando nos pregunte por el usuario tendremos que poner anonymous y contraseña no es necesario que pongamos nada.
+
+![Captura22](./imagenes/Captura22.PNG)
+
+Como vemos efectivamente nos hemos conectado sin problemas, pero vamos a configurar para que no pueda hacer todo lo que quiera un usuario que se conecte de forma anónima.
 
 Otra de las opciones interesantes, es dentro de Acces Control podemos establecer un mensaje que aparezca cuando se conecte de manera correcta, también hay algunas opciones interesantes como por ejemplo denegar la utilización de comandos dentro del servidor y alguna que otra más, por ahora vamos a probar la opción de succesful login message, como dato curioso, si hacemos la prueba desde FileZilla el mensaje de bienvenida no aparecerá, pero si accedemos desde la terminal el mensaje efectivamente aparecerá.
 
+![Captura23](./imagenes/Captura23.PNG)
+
+Tanto el mensaje de bienvenido como el de error podéis poner el que queráis. Yo he puesto estos:
+
+![Captura24](./imagenes/Captura24.PNG)
 
 Si queremos probar la opción de Failed login message, tendremos que volver a dejar la opción only allow login by users with valid shell? en default para que nos aparezca el mensaje de error, en este caso si nos aparece el mensaje incluso en FileZilla.
 
+![Captura25](./imagenes/Captura25.PNG)
+
 Y por último vamos a limitar el número de veces simultáneas que puedes conectarte al servidor de forma anónimo, en **Networking Options** veremos una opción llamada **Maximum concurrent logins** en esa opción podremos limitar las veces que puede conectarse al servidor y el mensaje de error que queremos que aparezca.
+
+![Captura26](./imagenes/Captura26.PNG)
+
+Si de límite has puesto 1 como yo, si abres otra conexión con el servidor saldrá el mensaje de error que le hayamos especificado.
+
+![Captura27](./imagenes/Captura27.PNG)
 
 
 [Volver a la página principal](README.md)
