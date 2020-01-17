@@ -33,14 +33,41 @@ Aquí le pondremos el nombre del grupo, y en la parte de abajo donde pone **Memb
 
 **5.** Una vez hemos acabado de crear el usuario podremos empezar a configurarlos para darles una serie de permisos y acciones que puedan hacer dentro del servidor y algunas que no.
 
+Una de las cosas que podemos hacer es accediendo a Acces Control
 
+![Captura6](./imagenes/Captura6.PNG)
 
+Nos aparecerán una serie de opciones interesantes, como por ejemplo que nos muestre un mensaje si accedemos correctamente, o si fallamos al loguearnos.
 
+![Captura7](./imagenes/Captura7.PNG)
 
+Otra cosa interesante que podemos hacer es configurar el límite de capacidad que tienen los usuarios para la subida de archivos, esto se configura desde Miscellanous.
+
+![Captura8](./imagenes/Captura8.PNG)
+
+En el apartado donde dice Memory resource limits le pondremos un límite para hacer la prueba, el límite puede ser el que vosotros elijáis, eso sí no pongáis un límite muy grande que si no habría que crear muchos archivos o un archivo de más o menos el tamaño que le especifiquéis, para la prueba usaremos el FileZilla ya que es más cómodo.(*Para establecer los límites de tamaño hay que establecerlo como B=Bytes, K=KyloBytes...)
+
+![Captura9](./imagenes/Captura9.PNG)
+
+En mi caso la prueba es de límite de 10KB, y en esa imagen vemos que el archivo pruebas ocupa 10KB y me ha dejado subirlo al servidor sin problemas, pero, ¿qué pasaría si volvemos a intentar subirlo?
+
+![Captura10](./imagenes/Captura10.PNG)
+
+Como vemos en los mensajes de FileZilla nos muestra un error y acaba omitiendo la subida del archivo.
+
+Otra de las opciones que podemos configurar es a que direcotrio queremos que se conecte directamente, esto se configurar desde Files and Directories y es en el apartado de Initial login directory, en este caso para hacer la prueba yo le he asignado el directorio raíz /, pero vosotros podéis poner el que queráis.
+
+![Captura11](./imagenes/Captura11.PNG)
+
+Una vez rellenemos ese apartado, vamos de nuevo a FileZilla y al conectarnos al servidor veremos esto:
+
+![Captura12](./imagenes/Captura12.PNG)
+
+Nos muestra donde hemos accedido de primeras.
 
 **6.** Ahora viene la parte de denegar usuarios, como su propio nombre indica se trata de la denegación a un usuario específico. Por defecto FTP impide el acceso  a un número de usuarios, pero,¿y si nosotros quisiéramos "banear" a uno en específico?, lo primero que debemos hacer es acceder a la **Global Configuration** y en el apartado de Denied FTP Users podemos ver la lista de usuarios que no peuden acceder al servidor, si nosotros quisiéramos hacer la prueba simplemente tendríamos que escribir el nombre del usuario al que queremos impedir el acceso.
 
-
+![Captura13](./imagenes/Captura13.PNG)
 
 
 
