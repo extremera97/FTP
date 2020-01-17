@@ -6,9 +6,9 @@
 
 **¿Si tenía algunos problemas de seguridad?**
 
-**¿Quién fue el padre de Dropbox, Google Drive, etc...**
+**¿Quién fue el padre de Dropbox, Google Drive, etc...?**
 
-En estas actividades intentaremos que aprendáis un poco sobre lo que era FTP.
+En estas actividades intentaremos que aprendáis un poco sobre lo que era el FTP.
 
 ## Indice
 # 1. Configurar usuario y grupos FTP
