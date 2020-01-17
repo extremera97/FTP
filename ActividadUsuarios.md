@@ -47,7 +47,7 @@ Aquí le pondremos el nombre del grupo, y en la parte de abajo donde pone **Memb
 
 **7.** Bien, una vez todo hecho vamos a probar a conectarnos con ese usuario.
 
-![Captura10](./imagenes/Captura10.PNG)
+
 
 Como vemos nos da un error y por tanto no nos deja conectarnos. Si quisiéramos volver a permitir que el usuario se conecte simplemente borramos su nombre de la lista de usuarios denegados y ya volvería a funcionar correctamente.
 
