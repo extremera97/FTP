@@ -14,4 +14,6 @@
 
 **5.** Prueba la subida de archivos con FileZilla.
 
+Si tienes problemas con el ejercicio aquí te dejo una [guía](https://github.com/amcamiguel/FTP2/blob/master/ActividadUsuarios.md)
+
 [Volver a la página principal](INDICE.md)
