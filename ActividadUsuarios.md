@@ -45,7 +45,11 @@ Otra cosa interesante que podemos hacer es configurar el límite de capacidad qu
 
 ![Captura8](./imagenes/Captura8.PNG)
 
-En el apartado donde dice ***Memory resource limits*** le pondremos un límite para hacer la prueba, el límite puede ser el que vosotros elijáis, eso sí no pongáis un límite muy grande que si no habría que crear muchos archivos o un archivo de más o menos el tamaño que le especifiquéis, para la prueba usaremos el FileZilla ya que es más cómodo.(*Para establecer los límites de tamaño hay que establecerlo como B=Bytes, K=KyloBytes...)
+En el apartado donde dice ***Memory resource limits*** le pondremos un límite para hacer la prueba, el límite puede ser el que vosotros elijáis (no pongáis un límite muy grande que si no habría que crear muchos archivos o un archivo de más o menos el tamaño que le especifiquéis).
+
+*Para establecer los límites de tamaño hay que establecerlo como B=Bytes, K=KyloBytes... 
+
+Para la prueba usaremos el FileZilla ya que es más cómodo.()
 
 ![Captura9](./imagenes/Captura9.PNG)
 
@@ -55,7 +59,7 @@ En mi caso la prueba es de límite de 10KB, y en esa imagen vemos que el archivo
 
 Como vemos en los mensajes de FileZilla nos muestra un error y acaba omitiendo la subida del archivo.
 
-Otra de las opciones que podemos configurar es a que directorio queremos que se conecte directamente, esto se configurar desde ***Files and Directories** y es en el apartado de ***Initial login directory***, en este caso para hacer la prueba yo le he asignado el directorio *raíz /*, pero vosotros podéis poner el que queráis.
+Otra de las opciones que podemos configurar es a que directorio queremos que se conecte directamente, esto se configurar desde ***Files and Directories** y es en el apartado de ***Initial login directory***. En este caso para hacer la prueba yo le he asignado el directorio *raíz /*, pero vosotros podéis poner el que queráis.
 
 ![Captura11](./imagenes/Captura11.PNG)
 
@@ -65,7 +69,11 @@ Una vez rellenemos ese apartado, vamos de nuevo a FileZilla y al conectarnos al 
 
 Nos muestra donde hemos accedido de primeras.
 
-**6.** Ahora viene la parte de denegar usuarios, como su propio nombre indica se trata de la denegación a un usuario específico. Por defecto FTP impide el acceso  a un número de usuarios, pero,¿y si nosotros quisiéramos "banear" a uno en específico?, lo primero que debemos hacer es acceder a la **Global Configuration** y en el apartado de Denied FTP Users podemos ver la lista de usuarios que no pueden acceder al servidor, si nosotros quisiéramos hacer la prueba simplemente tendríamos que escribir el nombre del usuario al que queremos impedir el acceso.
+**6.** Ahora viene la parte de denegar usuarios, como su propio nombre indica se trata de la denegación a un usuario específico. Por defecto FTP impide el acceso  a un número de usuarios, pero,¿y si nosotros quisiéramos "banear" a uno en específico? 
+
+Lo primero que debemos hacer es acceder a la **Global Configuration** y en el apartado de Denied FTP Users podemos ver la lista de usuarios que no pueden acceder al servidor
+
+Si nosotros quisiéramos hacer la prueba simplemente tendríamos que escribir el nombre del usuario al que queremos impedir el acceso.
 
 ![Captura13](./imagenes/Captura13.PNG)
 
@@ -80,7 +88,11 @@ Como vemos nos da un error y por tanto no nos deja conectarnos. Si quisiéramos 
 
 ***Enjaulamiento usuarios***
 
-**8.** Como siguiente paso vamos a hablar sobre el enjaulamiento de usuarios, este es un paso para darle más seguridad al servidor, ya que limitamos al usuario a que solo pueda navegar dentro de la ruta que nosotros le especifiquemos.(*Si en los pasos anteriores has puesto que se conecte directamente a la raíz / cambialo, si no dará un error y el usuario no se enjaulará*), para enjaularlo tendremos que acceder a **Edit Config Files**, lo primero que veremos es un archivo de texto, tenemos que buscar una línea de texto que nos aparecerá de la siguiente manera: #DefaultRoot tendremos que quitarle la almohadilla y especificar la ruta donde queremos enjaular al usuario que también especificaremos en esta línea de texto como se ve en la siguiente imagen:
+**8.** Como siguiente paso vamos a hablar sobre el enjaulamiento de usuarios, este es un paso para darle más seguridad al servidor, ya que limitamos al usuario a que solo pueda navegar dentro de la ruta que nosotros le especifiquemos.(*Si en los pasos anteriores has puesto que se conecte directamente a la raíz / cambialo, si no dará un error y el usuario no se enjaulará*)
+
+Para enjaularlo tendremos que acceder a **Edit Config Files**. Lo primero que veremos es un archivo de texto, tenemos que buscar una línea de texto que nos aparecerá de la siguiente manera: #DefaultRoot 
+
+Tendremos que quitarle la almohadilla y especificar la ruta donde queremos enjaular al usuario que también especificaremos en esta línea de texto como se ve en la siguiente imagen:
 
 ![Captura16](./imagenes/Captura16.PNG)
 
@@ -92,7 +104,7 @@ Si probáramos a salir de /home veríamos que no podemos.
 
 ***Configuración FTP Anonimo***
 
-**9.** El último paso respecto a la configuración de usuarios, sería la configuración anónima del servidor, accedemos a nuestro servidor y veremos que hay una opción que se llama anonymous FTP, tendremos que acceder a ella y aparecerá lo siguiente: 
+**9.** El último paso respecto a la configuración de usuarios sería la configuración anónima del servidor. Para ello accedemos a nuestro servidor y vemos que hay una opción que se llama anonymous FTP. Al acceder a ella y aparece lo siguiente: 
 
 ![Captura19](./imagenes/Captura19.PNG)
 
@@ -104,13 +116,17 @@ De todos los apartados que salen tendremos que acceder a ***Authentication*** y 
 
 ![Captura21](./imagenes/Captura21.PNG)
 
-De estas opciones muy importante que marquemos no en la opción de *only allow login by users with valid shell?* Si no, no podremos acceder al servidor, ahora vamos a probar a conectarnos al servidor como anónimo, para hacer esto cuando nos pregunte por el usuario tendremos que poner anonymous y contraseña no es necesario que pongamos nada.
+De estas opciones muy importante que marquemos "no" en la opción de *only allow login by users with valid shell?*, si no, no podremos acceder al servidor
+
+Ahora vamos a probar a conectarnos al servidor como anónimo, para hacer esto cuando nos pregunte por el usuario tendremos que poner anonymous y contraseña no es necesario que pongamos nada.
 
 ![Captura22](./imagenes/Captura22.PNG)
 
 Como vemos efectivamente nos hemos conectado sin problemas, pero vamos a configurar para que no pueda hacer todo lo que quiera un usuario que se conecte de forma anónima.
 
-Otra de las opciones interesantes, es dentro de ***Acces Control*** podemos establecer un mensaje que aparezca cuando se conecte de manera correcta, también hay algunas opciones interesantes como por ejemplo denegar la utilización de comandos dentro del servidor y alguna que otra más, por ahora vamos a probar la opción de *succesful login message*, como dato curioso, si hacemos la prueba desde FileZilla el mensaje de bienvenida no aparecerá, pero si accedemos desde la terminal el mensaje efectivamente aparecerá.
+Otra de las opciones interesantes, es dentro de ***Acces Control*** podemos establecer un mensaje que aparezca cuando se conecte de manera correcta. También hay algunas opciones interesantes como por ejemplo, denegar la utilización de comandos dentro del servidor y alguna que otra más.
+
+Por ahora vamos a probar la opción de *succesful login message*, como dato curioso, si hacemos la prueba desde FileZilla el mensaje de bienvenida no aparecerá, pero si accedemos desde la terminal el mensaje efectivamente aparecerá.
 
 ![Captura23](./imagenes/Captura23.PNG)
 
@@ -122,7 +138,9 @@ Si queremos probar la opción de ***Failed login message***, tendremos que volve
 
 ![Captura25](./imagenes/Captura25.PNG)
 
-Y por último vamos a limitar el número de veces simultáneas que puedes conectarte al servidor de forma anónimo, en ***Networking Options*** veremos una opción llamada ***Maximum concurrent logins***, en esa opción podremos limitar las veces que puede conectarse al servidor y el mensaje de error que queremos que aparezca.
+Y por último vamos a limitar el número de veces simultáneas que puedes conectarte al servidor de forma anónima.
+
+En ***Networking Options*** veremos una opción llamada ***Maximum concurrent logins***, allí podremos limitar las veces que puede conectarse al servidor y el mensaje de error que queremos que aparezca.
 
 ![Captura26](./imagenes/Captura26.PNG)
 
